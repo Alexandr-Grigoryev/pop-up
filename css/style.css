@@ -1,0 +1,48 @@
+.open-button {
+  display: block;
+  /* margin: 100px auto 0 auto; */
+  margin: 100px auto;
+  transform: translateX(100%) scale(1.5);
+}
+.close-button {
+  display: block;
+  margin: 100px, auto;
+  transform: rotate(0.25turn);
+}
+.backdrop {
+  position: fixed;
+
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+
+  opacity: 1;
+  transition: 500ms;
+  transition-property: opacity;
+
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0.1);
+}
+
+.modal {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 50%;
+  top: 50%;
+  height: 400px;
+  width: 300px;
+
+  transform: translate(-50%, -50%) scale(1.1);
+  transition: 500ms;
+  background-color: #ccc;
+}
