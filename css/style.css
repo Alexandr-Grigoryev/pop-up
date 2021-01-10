@@ -5,9 +5,7 @@
   transform: translateX(100%) scale(1.5);
 }
 .close-button {
-  display: block;
-  margin: 100px, auto;
-  transform: rotate(0.25turn);
+  position: absolute;
 }
 .backdrop {
   position: fixed;
@@ -35,8 +33,8 @@
 .modal {
   position: absolute;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-end;
+  align-items: flex-start;
   left: 50%;
   top: 50%;
   height: 400px;
